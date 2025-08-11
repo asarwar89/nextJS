@@ -1,10 +1,10 @@
-import clsx from 'clsx';
-import Image from 'next/image';
+import clsx from "clsx";
+import Image from "next/image";
 
-import { fetchLatestInvoices } from '@/app/lib/data';
-import { LatestInvoice } from '@/app/lib/definitions';
-import { lusitana } from '@/app/ui/fonts';
-import { ArrowPathIcon } from '@heroicons/react/24/outline';
+import { fetchLatestInvoices } from "@/app/lib/data";
+// import { LatestInvoice } from '@/app/lib/definitions';
+import { lusitana } from "@/app/ui/fonts";
+import { ArrowPathIcon } from "@heroicons/react/24/outline";
 
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices();
